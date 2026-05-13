@@ -24,7 +24,7 @@ Research sources used:
 - Microsoft Azure Well-Architected AI workload guidance: https://learn.microsoft.com/en-us/azure/well-architected/ai/
 - Microsoft Azure AI workload architecture pattern: https://learn.microsoft.com/en-us/azure/well-architected/ai/architecture-pattern
 - Microsoft Azure AI workload operations guidance: https://learn.microsoft.com/en-us/azure/well-architected/ai/operations
-- OpenAI production best practices: https://platform.openai.com/docs/guides/production-best-practices/production-best-practices
+- OpenAI production best practices: https://platform.openai.com/docs/guides/production-best-practices
 - OpenAI evaluation best practices: https://platform.openai.com/docs/guides/evaluation-best-practices
 
 ## Included Project Links
