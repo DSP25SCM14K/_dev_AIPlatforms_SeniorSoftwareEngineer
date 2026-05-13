@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dev Kumar - Senior Software Engineer portfolio for AI platforms, secure APIs, workflow automation, and production data systems."
+    />
+    <title>Dev Kumar | AI Platforms Senior Software Engineer</title>
+    <link rel="preload" href="./assets/ai-platform-hero.png" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Dev Kumar home">
+        <span class="brand-mark">DK</span>
+        <span>Dev Kumar</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#systems">Systems</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./assets/ai-platform-hero.png" alt="" />
+          <div class="hero-scan"></div>
+        </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Senior Software Engineer - AI Platforms</p>
+          <h1>AI platforms for secure agents, APIs, and data systems.</h1>
+          <p class="hero-copy">
+            I build C#/.NET and Python services, workflow automation, secure REST APIs, and tuned databases
+            that move AI from prototype to production.
+          </p>
+          <div class="dynamic-line" aria-live="polite">
+            <span class="line-label">Currently focused on</span>
+            <span id="dynamic-text"></span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+          </div>
+        </div>
+        <div class="hero-metrics reveal" aria-label="Selected engineering impact">
+          <article>
+            <span class="metric-value" data-count="100000">0</span>
+            <span class="metric-label">daily AI API requests</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="85">0</span>
+            <span class="metric-suffix">%</span>
+            <span class="metric-label">query latency reduction</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="50">0</span>
+            <span class="metric-suffix">M+</span>
+            <span class="metric-label">row tables tuned</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="99.99">0</span>
+            <span class="metric-suffix">%</span>
+            <span class="metric-label">critical uptime delivered</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro-band reveal" id="systems">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Surface Area</p>
+          <h2>Production AI platform work is mostly invisible when it is done right.</h2>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-index">01</span>
+            <h3>Automate the repeatable</h3>
+            <p>Airflow, Logic Apps, Power Automate, retry policies, SLA alerts, and dashboards turn recurring data and ML operations into dependable flows.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02</span>
+            <h3>Secure the edges</h3>
+            <p>OAuth2, OIDC, scoped JWT validation, RBAC, token rotation, and least-privilege service boundaries make AI services safer to expose.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03</span>
+            <h3>Measure what matters</h3>
+            <p>Latency, quality, availability, utilization, and failure modes need first-class telemetry so teams can improve systems without guessing.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">04</span>
+            <h3>Tune the path</h3>
+            <p>Schema design, partitioning, indexes, stored procedures, and execution-plan rewrites keep intelligence fast enough to be useful.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section diagram-section reveal" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <p class="eyebrow">Platform Diagram</p>
+          <h2 id="architecture-title">How I think about AI systems from request to operation.</h2>
+        </div>
+        <div class="diagram-shell">
+          <svg class="architecture-diagram" viewBox="0 0 1120 520" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">AI platform architecture diagram</title>
+            <desc id="diagram-desc">A flow from clients through secure APIs, orchestration, LLM services, data stores, and observability.</desc>
+            <defs>
+              <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2dd4bf" />
+                <stop offset="50%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#f59e0b" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <g class="diagram-grid">
+              <path d="M40 80H1080M40 170H1080M40 260H1080M40 350H1080M40 440H1080" />
+              <path d="M110 40V480M270 40V480M430 40V480M590 40V480M750 40V480M910 40V480" />
+            </g>
+
+            <g class="diagram-node node-client">
+              <rect x="54" y="180" width="180" height="120" rx="18" />
+              <text x="144" y="222">Product Teams</text>
+              <text x="144" y="252">Dashboards</text>
+              <text x="144" y="282">Users</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="294" y="78" width="190" height="116" rx="18" />
+              <text x="389" y="120">Secure API</text>
+              <text x="389" y="150">ASP.NET Core</text>
+              <text x="389" y="180">OAuth2 / OIDC</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="294" y="314" width="190" height="116" rx="18" />
+              <text x="389" y="356">Workflow Layer</text>
+              <text x="389" y="386">Airflow DAGs</text>
+              <text x="389" y="416">Logic Apps</text>
+            </g>
+
+            <g class="diagram-node node-core">
+              <rect x="560" y="160" width="230" height="150" rx="22" />
+              <text x="675" y="202">Agentic AI Services</text>
+              <text x="675" y="234">LangChain / LangGraph</text>
+              <text x="675" y="266">Model gateways</text>
+              <text x="675" y="296">Streaming responses</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="870" y="74" width="190" height="116" rx="18" />
+              <text x="965" y="116">Data Layer</text>
+              <text x="965" y="146">Postgres / SQL</text>
+              <text x="965" y="176">Vectors / Redshift</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="870" y="320" width="190" height="116" rx="18" />
+              <text x="965" y="362">Operations</text>
+              <text x="965" y="392">Grafana alerts</text>
+              <text x="965" y="422">Incident learning</text>
+            </g>
+
+            <path class="flow-line" d="M234 240C260 240 268 136 294 136" />
+            <path class="flow-line" d="M234 240C260 240 268 372 294 372" />
+            <path class="flow-line" d="M484 136C530 136 520 235 560 235" />
+            <path class="flow-line" d="M484 372C530 372 520 235 560 235" />
+            <path class="flow-line" d="M790 235C830 235 830 132 870 132" />
+            <path class="flow-line" d="M790 235C830 235 830 378 870 378" />
+            <path class="flow-line feedback" d="M965 320C965 252 746 102 675 160" />
+
+            <circle class="pulse-dot dot-a" cx="294" cy="136" r="8" />
+            <circle class="pulse-dot dot-b" cx="560" cy="235" r="8" />
+            <circle class="pulse-dot dot-c" cx="870" cy="378" r="8" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="section skill-section reveal" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Core Toolkit</p>
+          <h2 id="skills-title">Hands-on across services, automation, AI, security, data, and cloud delivery.</h2>
+        </div>
+        <div class="skill-cloud" aria-label="Key skills">
+          <span>.NET Core</span>
+          <span>ASP.NET Core</span>
+          <span>C#</span>
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>REST APIs</span>
+          <span>gRPC</span>
+          <span>OAuth2</span>
+          <span>OpenID Connect</span>
+          <span>JWT</span>
+          <span>RBAC</span>
+          <span>Airflow</span>
+          <span>Power Automate</span>
+          <span>Azure Logic Apps</span>
+          <span>Kafka</span>
+          <span>LangChain</span>
+          <span>LangGraph</span>
+          <span>OpenAI APIs</span>
+          <span>RAG</span>
+          <span>pgvector</span>
+          <span>Pinecone</span>
+          <span>SQL Server</span>
+          <span>PostgreSQL</span>
+          <span>Redshift</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>Terraform</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+          <span>AWS</span>
+          <span>Azure</span>
+          <span>GCP</span>
+        </div>
+      </section>
+
+      <section class="section experience-section reveal" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Built across enterprise AI, workflow automation, analytics, and critical data systems.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Mar 2025 - Present</div>
+            <div class="timeline-body">
+              <h3>Senior Software Engineer</h3>
+              <p class="company">Sprouts AI | Chicago, IL</p>
+              <ul>
+                <li>Architected production AI platform services using .NET/C# (ASP.NET Core, Web API) and Python/FastAPI, exposing RESTful endpoints for agentic LLM workflows that served 100K+ daily requests at p99 &lt; 250 ms by introducing async I/O, connection pooling, and response streaming.</li>
+                <li>Automated cross-system data and ML workflows with Apache Airflow and Azure Logic Apps, replacing 40+ recurring analyst tasks per week and reducing pipeline failure rate by 60% via retry/backoff DAGs, SLA alerts, and Grafana observability dashboards.</li>
+                <li>Designed and tuned schemas, indexes, and stored procedures on PostgreSQL and SQL Server backing analytics and vector retrieval - cutting query latency from 1.2 s to 180 ms (~85%) on 50M+ row tables through composite indexes, partitioning, and execution-plan rewrites.</li>
+                <li>Secured all customer-facing AI APIs with OAuth2 and OpenID Connect, implementing scoped JWT validation, refresh-token rotation, and least-privilege RBAC across services - passing internal enterprise security review with zero high-severity findings.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Apr 2024 - Aug 2024</div>
+            <div class="timeline-body">
+              <h3>Software Engineer</h3>
+              <p class="company">Resilience Inc | Chicago, IL</p>
+              <ul>
+                <li>Built RESTful Web APIs in .NET/C# (ASP.NET Core) and Spring Boot for enterprise data and analytics teams, integrating SQL Server, Postgres, and Amazon Redshift to power BI dashboards consumed by 200+ internal users with sub-second response times.</li>
+                <li>Engineered Apache Airflow DAGs and Power Automate flows to orchestrate 30+ cross-system ETL workflows between source systems, the data warehouse, and ML training jobs - eliminating 70% of weekly manual data-ops effort.</li>
+                <li>Optimized stored procedures and query plans in SQL Server (covering indexes, CTEs, execution-plan tuning), improving analytics dashboard load times by 55% and removing a recurring nightly batch overrun that had triggered weekly on-call escalations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Aug 2021 - Aug 2023</div>
+            <div class="timeline-body">
+              <h3>Software Engineer / IT Project Manager</h3>
+              <p class="company">Tata Steel</p>
+              <ul>
+                <li>Delivered enterprise .NET/C# Web API services backing manufacturing analytics for 500+ users, integrating SQL Server stored procedures and Postgres reporting marts - achieving 99.99% uptime across mission-critical reporting workloads.</li>
+                <li>Led workflow-automation initiatives using Microsoft Power Automate and custom .NET orchestrators to digitize 25+ approval and incident-response processes, cutting end-to-end cycle time by 40% across plant operations.</li>
+                <li>Designed schemas, indexes, and partitioning strategies for high-volume operational tables (1B+ rows/year), tuning T-SQL stored procedures that reduced monthly reporting runtime from 4h to 45m (~80%).</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Practical systems across AI, markets, operating systems, mobile, and hardware.</h2>
+        </div>
+        <div class="project-toolbar" role="list" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="ai">AI</button>
+          <button class="filter-button" type="button" data-filter="platform">Platform</button>
+          <button class="filter-button" type="button" data-filter="systems">Systems</button>
+          <button class="filter-button" type="button" data-filter="markets">Markets</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-tags="ai markets platform">
+            <div class="project-topline"><span>AI + Trading</span><span>C#/.NET</span></div>
+            <h3>TradeSentinel</h3>
+            <p>AI-powered trading insights platform with ASP.NET Core APIs, agentic LLM workflows, OAuth2/OIDC, and Postgres-backed analytics.</p>
+            <div class="project-links">
+              <a href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai platform">
+            <div class="project-topline"><span>RAG Assistant</span><span>LangGraph</span></div>
+            <h3>AskMyStore</h3>
+            <p>Agentic AI assistant for store knowledge workflows, combining retrieval, secure REST endpoints, and production-oriented prompt orchestration.</p>
+            <div class="project-links">
+              <a href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="markets platform">
+            <div class="project-topline"><span>Streaming Pipeline</span><span>Kafka</span></div>
+            <h3>Real-time Stock Market Analysis Pipeline</h3>
+            <p>Event-driven market data pipeline using Kafka ingestion, Airflow orchestration, and analytics storage for time-series workloads.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="markets systems">
+            <div class="project-topline"><span>Market Data</span><span>C/C++</span></div>
+            <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+            <p>Low-level feed handler for CME multicast market data with an emphasis on packet processing, latency, and systems-level reliability.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai platform">
+            <div class="project-topline"><span>Agent Search</span><span>LangChain</span></div>
+            <h3>LangChain Chat with Search</h3>
+            <p>Conversational AI workflow using LangChain tools and search augmentation to answer questions with external context.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai">
+            <div class="project-topline"><span>Recommendation Systems</span><span>IEEE</span></div>
+            <h3>Comparative Study of Movie Recommendation Systems</h3>
+            <p>Published IEEE work exploring feature engineering and improved error functions on Netflix recommendation data.</p>
+            <div class="project-links">
+              <a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems platform">
+            <div class="project-topline"><span>Operating Systems</span><span>Kernel</span></div>
+            <h3>Experimental Operating System</h3>
+            <p>Hands-on operating system project covering kernel concepts, process management, memory, and system-level programming.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline"><span>Linux Kernel</span><span>Driver</span></div>
+            <h3>Character Device Driver</h3>
+            <p>Linux character device driver implementation focused on kernel interfaces, IO paths, and low-level debugging discipline.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="platform">
+            <div class="project-topline"><span>Full-stack App</span><span>Collaboration</span></div>
+            <h3>STRANGERS</h3>
+            <p>Application project built around real user interaction patterns, backend coordination, and shipping a usable product experience.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline"><span>Computer Architecture</span><span>Hardware</span></div>
+            <h3>16-Bit RISC Processor</h3>
+            <p>Hardware lab project implementing processor concepts from instruction flow to datapath design and low-level execution thinking.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="platform">
+            <div class="project-topline"><span>iOS</span><span>Swift</span></div>
+            <h3>Pitch Perfect</h3>
+            <p>iOS app project focused on audio capture, playback transformations, and clean mobile interaction design.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credentials-section reveal">
+        <div class="credentials-panel">
+          <div>
+            <p class="eyebrow">Publication</p>
+            <h2>IEEE - A Comparative Study of Movie Recommendation Systems</h2>
+            <p>Research on recommendation-system feature engineering and improved error functions using Netflix data.</p>
+            <a class="inline-link" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Read the paper</a>
+          </div>
+          <div>
+            <p class="eyebrow">Certificate</p>
+            <h2>Verified Credential</h2>
+            <p>A supporting credential shared with the portfolio materials.</p>
+            <a class="inline-link" href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">View certificate</a>
+          </div>
+          <div>
+            <p class="eyebrow">Education</p>
+            <h2>Computer Science</h2>
+            <p>Illinois Institute of Technology - M.S., Computer Science</p>
+            <p>National Institute of Technology Calicut - B.Tech, Computer Science</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build systems that stay calm under pressure.</h2>
+          <p>
+            I am strongest where software engineering, platform reliability, data performance, and AI workflows meet.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:devkumar.dklv@gmail.com">devkumar.dklv@gmail.com</a>
+          <a class="button button-secondary" href="tel:+13125328223">+1-312-532-8223</a>
+          <a class="button button-secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button button-secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed and built for Dev Kumar. No templates, no noise - just the work, the systems, and the outcomes.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
